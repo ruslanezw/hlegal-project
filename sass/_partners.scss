@@ -1,0 +1,117 @@
+.services-partners-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(50, 50, 100, 1);
+    padding-bottom: 30px;
+    padding-top: 60px;
+}
+
+.partners-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.services-partners {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .color-1 {
+        background-color: rgba(28, 66, 128, 1);
+    }
+
+    .color-2 {
+        background-color: rgba(20, 54, 70, 1);
+    }
+
+    .color-3 {
+        background-color: rgba(244, 139, 48, 1);
+    }
+
+    .color-4 {
+        background-color: rgba(158, 77, 195, 1);
+    }
+
+    .color-5 {
+        background-color: rgba(253, 147, 57, 1);
+    }
+
+    .color-6 {
+        background-color: rgba(226, 226, 228, 1);
+    }
+
+    .color-7 {
+        background-color: rgba(199, 28, 54, 1);
+    }
+
+    .color-8 {
+        background-color: rgba(220, 243, 249, 1);
+    }
+
+    .color-9 {
+        background-color: rgba(234, 234, 234, 1);
+    }
+
+    .color-10 {
+        background-color: rgba(40, 34, 64, 1);
+    }
+
+    .color-11 {
+        background-color: rgba(29, 69, 104, 1);
+    }
+
+    .color-12 {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-card:nth-child(n + 7) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .services-partners {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .partners-card {
+        width: 256px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .partners-card {
+        width: 360px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .services-partners :nth-child(1) {
+        border-top-left-radius: 12px;
+    }
+
+    .services-partners :nth-child(4) {
+        border-top-right-radius: 12px;
+    }
+
+    .services-partners :nth-child(9) {
+        border-bottom-left-radius: 12px;
+    }
+
+    .services-partners :nth-child(12) {
+        border-bottom-right-radius: 12px;
+    }
+
+    .partners-card {
+        width: 430px;
+    }
+}

@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.services {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.wrapper-services {
+  width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-click {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: rgb(36, 163, 255);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.services-click:hover {
+  color: rgb(240, 20, 90);
+}
+
+.services-click:hover svg path {
+  stroke: rgb(240, 20, 90);
+}
+
+.services-title-des {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-cards-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.services-cards-inner .services-card-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92px;
+  height: 92px;
+  border-radius: 24px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+.services-cards-inner .services-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  color: rgb(36, 163, 255);
+  margin-bottom: 15px;
+}
+.services-cards-inner .services-card-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+  .wrapper-services {
+    width: 648px;
+  }
+  .services-cards-inner {
+    flex-direction: row;
+    gap: 60px;
+    padding-top: 60px;
+  }
+  .services-card {
+    width: 294px;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper-services {
+    width: 904px;
+  }
+  .services-card {
+    width: 261px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper-services {
+    width: 1320px;
+  }
+  .services-card {
+    width: 400px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper-services {
+    width: 1600px;
+  }
+  .services-card {
+    width: 493px;
+  }
+}
+.services-partners-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(50, 50, 100);
+  padding-bottom: 30px;
+  padding-top: 60px;
+}
+
+.partners-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.services-partners {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.services-partners .color-1 {
+  background-color: rgb(28, 66, 128);
+}
+.services-partners .color-2 {
+  background-color: rgb(20, 54, 70);
+}
+.services-partners .color-3 {
+  background-color: rgb(244, 139, 48);
+}
+.services-partners .color-4 {
+  background-color: rgb(158, 77, 195);
+}
+.services-partners .color-5 {
+  background-color: rgb(253, 147, 57);
+}
+.services-partners .color-6 {
+  background-color: rgb(226, 226, 228);
+}
+.services-partners .color-7 {
+  background-color: rgb(199, 28, 54);
+}
+.services-partners .color-8 {
+  background-color: rgb(220, 243, 249);
+}
+.services-partners .color-9 {
+  background-color: rgb(234, 234, 234);
+}
+.services-partners .color-10 {
+  background-color: rgb(40, 34, 64);
+}
+.services-partners .color-11 {
+  background-color: rgb(29, 69, 104);
+}
+.services-partners .color-12 {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .partners-card:nth-child(n+7) {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .services-partners {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .partners-card {
+    width: 256px;
+  }
+}
+@media (min-width: 1440px) {
+  .partners-card {
+    width: 360px;
+  }
+}
+@media (min-width: 1920px) {
+  .services-partners :nth-child(1) {
+    border-top-left-radius: 12px;
+  }
+  .services-partners :nth-child(4) {
+    border-top-right-radius: 12px;
+  }
+  .services-partners :nth-child(9) {
+    border-bottom-left-radius: 12px;
+  }
+  .services-partners :nth-child(12) {
+    border-bottom-right-radius: 12px;
+  }
+  .partners-card {
+    width: 430px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
