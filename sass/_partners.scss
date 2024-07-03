@@ -6,7 +6,6 @@
     text-transform: uppercase;
     text-align: center;
     color: rgba(50, 50, 100, 1);
-    padding-bottom: 30px;
     padding-top: 60px;
 }
 
@@ -18,9 +17,8 @@
 }
 
 .services-partners {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    padding-top: 30px;
 
     .color-1 {
         background-color: rgba(28, 66, 128, 1);
@@ -79,22 +77,23 @@
 
 @media (min-width: 768px) {
     .services-partners {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .partners-card {
-        width: 256px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (min-width: 1440px) {
-    .partners-card {
-        width: 360px;
+@media (min-width: 1024px) {
+    .services-partners {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (min-width: 1920px) {
+    .services-partners {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 60px;
+    }
+
     .services-partners :nth-child(1) {
         border-top-left-radius: 12px;
     }
@@ -109,9 +108,5 @@
 
     .services-partners :nth-child(12) {
         border-bottom-right-radius: 12px;
-    }
-
-    .partners-card {
-        width: 430px;
     }
 }
