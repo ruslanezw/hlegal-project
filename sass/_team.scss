@@ -1,0 +1,131 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 106px;
+}
+
+.wrapper-team {
+    background-color: rgba(245, 245, 250, 1);
+    border-radius: 12px;
+    position: relative;
+}
+
+
+.team-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    .team-click {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: rgba(36, 163, 255, 1);
+        margin-bottom: 5px;
+        text-decoration: none;
+    }
+
+    .team-title-des {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+        text-align: left;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 30px;
+    }
+
+    .team-name {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+        text-align: left;
+        color: rgba(179, 179, 186, 1);
+        margin-bottom: 6px;
+    }
+
+    .team-job-title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+        color: rgba(179, 179, 186, 1);
+    }
+}
+
+.carousel {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -46px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    .carousel-btn {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: transparent;
+        background-color: rgba(36, 163, 255, 0.2);
+    }
+
+    .carousel-btn:focus {
+        background-color: rgba(36, 163, 255, 1);
+
+    }
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .team-info .team-title-des {
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper-team {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .team-img {
+        height: 528px;
+        border-radius: 12px 0 0 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .team-img {
+        height: 344px;
+        border-radius: 12px 0 0 12px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper-team {
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+}
