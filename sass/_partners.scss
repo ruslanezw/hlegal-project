@@ -8,17 +8,17 @@
     color: rgba(50, 50, 100, 1);
 }
 
-.partners-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .partners {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 120px);
     padding-top: 30px;
+
+    .partners-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .color-1 {
         background-color: rgba(28, 66, 128, 1);

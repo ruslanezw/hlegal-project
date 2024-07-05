@@ -107,6 +107,11 @@
         padding-right: 60px;
     }
 
+    .services-title-des {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
     .services-cards-inner {
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;
@@ -122,7 +127,7 @@
 
 @media (min-width: 1920px) {
     .wrapper-services {
-        margin-left: 160px;
-        margin-right: 160px;
+        padding-left: 160px;
+        padding-right: 160px;
     }
 }
