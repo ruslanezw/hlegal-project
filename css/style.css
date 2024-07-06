@@ -71,18 +71,18 @@ body {
   height: 10px;
   position: absolute;
   border-radius: 0 0 12px 12px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .services:before {
   background-color: rgb(202, 202, 219);
-  width: calc(100% - 40px);
   bottom: -10px;
+  left: 20px;
+  right: 20px;
 }
 .services:after {
   background-color: rgb(231, 231, 242);
-  width: calc(100% - 80px);
   bottom: -20px;
+  left: 40px;
+  right: 40px;
 }
 
 .wrapper-services {
@@ -178,6 +178,9 @@ body {
 }
 @media (min-width: 1920px) {
   .wrapper-services {
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 160px;
     padding-right: 160px;
   }
@@ -295,6 +298,9 @@ body {
 }
 @media (min-width: 1920px) {
   .wrapper-team {
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 160px;
     padding-right: 160px;
   }
@@ -375,6 +381,11 @@ body {
   }
 }
 @media (min-width: 1920px) {
+  .services-partners {
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .partners {
     padding-left: 100px;
     padding-right: 100px;
@@ -502,6 +513,9 @@ body {
 }
 @media (min-width: 1920px) {
   .wrapper-recommended {
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 160px;
     padding-right: 160px;
   }
