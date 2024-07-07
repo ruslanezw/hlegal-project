@@ -275,7 +275,7 @@ body {
     padding-left: 60px;
     padding-right: 60px;
   }
-  .team-info .team-title-des {
+  .team-item .team-info .team-title-des {
     font-size: 38px;
     line-height: 46px;
   }
@@ -543,7 +543,7 @@ body {
   text-decoration: none;
 }
 .navigation-scroll .link-scroll:hover {
-  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -585,12 +585,16 @@ body {
   .navigation-scroll {
     margin-right: -60px;
   }
+  .navigation-scroll .link-scroll {
+    font-size: 38px;
+    line-height: 46px;
+  }
   .navigation-scroll .link-scroll:last-child {
     margin-right: 60px;
   }
-  .title-scroll {
+  .info-scroll .title-scroll {
     font-size: 30px;
-    line-height: 36px;
+    line-height: 37px;
   }
 }
 @media (min-width: 1024px) {

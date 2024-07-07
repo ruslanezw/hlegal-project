@@ -1,3 +1,6 @@
+@use './mixins';
+@use './variables';
+
 .recommended {
     background-color: rgba(245, 245, 250, 1);
 }
@@ -6,7 +9,6 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
-
 }
 
 .recommended-click {
@@ -17,7 +19,7 @@
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 1px;
-    color: rgba(36, 163, 255, 1);
+    color: variables.$blue;
     text-decoration: none;
     margin-bottom: 5px;
 }
@@ -27,7 +29,7 @@
     font-weight: 700;
     line-height: 37px;
     text-align: left;
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background: variables.$gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 30px;
@@ -39,7 +41,7 @@
     gap: 30px;
 
     .recommended-card-item {
-        background-color: rgba(255, 255, 255, 1);
+        background-color: variables.$white;
         border-radius: 12px;
     }
 
@@ -61,7 +63,7 @@
             font-weight: 700;
             line-height: 16px;
             text-align: left;
-            color: rgba(36, 163, 255, 1);
+            color: variables.$blue;
         }
 
         .recommended-card-date {
@@ -70,7 +72,7 @@
             line-height: 12px;
             letter-spacing: 1px;
             text-align: left;
-            color: rgba(179, 179, 186, 1);
+            color: variables.$grey;
         }
 
         .recommended-line {
@@ -84,7 +86,7 @@
             font-weight: 400;
             line-height: 22px;
             text-align: left;
-            color: rgba(0, 0, 0, 1);
+            color: variables.$black;
         }
     }
 }
@@ -96,8 +98,7 @@
     }
 
     .recommended-title-des {
-        font-size: 38px;
-        line-height: 46px;
+        @include mixins.title-size;
     }
 
     .recommended-card {

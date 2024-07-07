@@ -1,3 +1,6 @@
+@use './mixins';
+@use './variables';
+
 .wrapper-scroll {
     display: flex;
     flex-direction: column;
@@ -17,11 +20,11 @@
         font-weight: 700;
         line-height: 37px;
         text-align: left;
-        color: rgba(179, 179, 186, 1);
+        color: variables.$grey;
         text-decoration: none;
 
         &:hover {
-            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+            background: variables.$gradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -48,7 +51,7 @@
         font-weight: 700;
         line-height: 24px;
         text-align: left;
-        color: rgba(255, 255, 255, 1);
+        color: variables.$white;
     }
 
     .des-scroll {
@@ -56,7 +59,7 @@
         font-weight: 400;
         line-height: 30px;
         text-align: left;
-        color: rgba(255, 255, 255, 1);
+        color: variables.$white;
     }
 }
 
@@ -69,14 +72,18 @@
     .navigation-scroll {
         margin-right: -60px;
 
+        .link-scroll {
+            @include mixins.title-size;
+        }
+
         .link-scroll:last-child {
             margin-right: 60px;
         }
     }
 
-    .title-scroll {
+    .info-scroll .title-scroll {
         font-size: 30px;
-        line-height: 36px;
+        line-height: 37px;
     }
 }
 
