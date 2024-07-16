@@ -67,7 +67,6 @@ body {
 }
 .scroll-services:before, .scroll-services:after {
   content: "";
-  display: inline-block;
   height: 10px;
   position: absolute;
   border-radius: 0 0 12px 12px;
@@ -85,7 +84,7 @@ body {
   right: 40px;
 }
 
-.wrapper-services {
+.wrapper {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -157,7 +156,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .wrapper-services {
+  .wrapper {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -177,7 +176,7 @@ body {
   }
 }
 @media (min-width: 1920px) {
-  .wrapper-services {
+  .wrapper {
     width: 1920px;
     margin-right: auto;
     margin-left: auto;
@@ -188,11 +187,6 @@ body {
 .team {
   padding-top: 80px;
   padding-bottom: 106px;
-}
-
-.wrapper-team {
-  padding-left: 30px;
-  padding-right: 30px;
   position: relative;
 }
 
@@ -254,7 +248,7 @@ body {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -46px;
+  bottom: 46px;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -271,7 +265,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .wrapper-team {
+  .wrapper {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -297,7 +291,7 @@ body {
   }
 }
 @media (min-width: 1920px) {
-  .wrapper-team {
+  .wrapper {
     width: 1920px;
     margin-right: auto;
     margin-left: auto;
@@ -405,13 +399,8 @@ body {
   }
 }
 .recommended {
-  background-color: rgb(245, 245, 250);
-}
-
-.wrapper-recommended {
-  padding-left: 30px;
-  padding-right: 30px;
   padding-top: 30px;
+  background-color: rgb(245, 245, 250);
 }
 
 .recommended-click {
@@ -488,7 +477,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .wrapper-recommended {
+  .wrapper {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -512,7 +501,7 @@ body {
   }
 }
 @media (min-width: 1920px) {
-  .wrapper-recommended {
+  .wrapper {
     width: 1920px;
     margin-right: auto;
     margin-left: auto;
@@ -532,6 +521,8 @@ body {
   gap: 30px;
   overflow: auto;
   margin-right: -30px;
+  margin-left: -30px;
+  padding-left: 30px;
 }
 .navigation-scroll .link-scroll {
   flex-shrink: 0;
@@ -584,6 +575,8 @@ body {
   }
   .navigation-scroll {
     margin-right: -60px;
+    margin-left: -60px;
+    padding-left: 60px;
   }
   .navigation-scroll .link-scroll {
     font-size: 38px;

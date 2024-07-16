@@ -1,7 +1,7 @@
 @use './mixins';
 @use './variables';
 
-.wrapper-services {
+.wrapper {
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -76,9 +76,8 @@
 }
 
 @media (min-width: 768px) {
-    .wrapper-services {
-        padding-left: 60px;
-        padding-right: 60px;
+    .wrapper {
+        @include mixins.wrapper-pd-60px;
     }
 
     .services-title-des {
@@ -99,11 +98,7 @@
 }
 
 @media (min-width: 1920px) {
-    .wrapper-services {
-        width: 1920px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 160px;
-        padding-right: 160px;
+    .wrapper {
+        @include mixins.wrapper-pd-160px;
     }
 }

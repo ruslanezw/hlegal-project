@@ -13,6 +13,8 @@
     gap: 30px;
     overflow: auto;
     margin-right: -30px;
+    margin-left: -30px;
+    padding-left: 30px;
 
     .link-scroll {
         flex-shrink: 0;
@@ -71,6 +73,8 @@
 
     .navigation-scroll {
         margin-right: -60px;
+        margin-left: -60px;
+        padding-left: 60px;
 
         .link-scroll {
             @include mixins.title-size;
