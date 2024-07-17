@@ -1,20 +1,16 @@
 @use './mixins';
 @use './variables';
 
-.wrapper-scroll {
+.wrapper-scroll-basic {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 30px;
 }
 
 .navigation-scroll {
     display: flex;
     gap: 30px;
     overflow: auto;
-    margin-right: -30px;
-    margin-left: -30px;
-    padding-left: 30px;
+    padding: 30px 0 30px 30px;
 
     .link-scroll {
         flex-shrink: 0;
@@ -37,6 +33,10 @@
     }
 }
 
+.wrapper-scroll {
+    padding: 0 30px 30px 30px;
+}
+
 .line-scroll {
     border: 4px solid rgba(255, 255, 255, 0.3);
     width: 100%;
@@ -46,7 +46,6 @@
 .info-scroll {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 
     .title-scroll {
         font-size: 20px;
@@ -54,6 +53,7 @@
         line-height: 24px;
         text-align: left;
         color: variables.$white;
+        margin-top: 30px;
     }
 
     .des-scroll {
@@ -62,19 +62,17 @@
         line-height: 30px;
         text-align: left;
         color: variables.$white;
+        margin-top: 30px;
     }
 }
 
 @media (min-width: 768px) {
     .wrapper-scroll {
-        gap: 60px;
-        padding: 60px;
+        padding: 0 60px 60px 60px;
     }
 
     .navigation-scroll {
-        margin-right: -60px;
-        margin-left: -60px;
-        padding-left: 60px;
+        padding: 60px 0 60px 60px;
 
         .link-scroll {
             @include mixins.title-size;
@@ -88,24 +86,31 @@
     .info-scroll .title-scroll {
         font-size: 30px;
         line-height: 37px;
+        margin-top: 60px;
     }
 }
 
 @media (min-width: 1024px) {
-    .wrapper-scroll {
+    .wrapper-scroll-basic {
         display: flex;
         flex-direction: row;
+        padding: 60px;
+        gap: 60px;
+    }
+
+    .wrapper-scroll {
+        display: flex;
+        gap: 60px;
+        padding: 0;
     }
 
     .navigation-scroll {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: end;
-        gap: 30px;
         overflow: visible;
-        margin-right: 0px;
         white-space: nowrap;
+        padding: 0;
 
         .link-scroll:last-child {
             margin-right: 0;
@@ -113,10 +118,12 @@
     }
 
     .info-scroll {
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: start;
+
+        .title-scroll {
+            margin: 0;
+        }
     }
 
     .line-scroll {
@@ -125,14 +132,14 @@
 }
 
 @media (min-width: 1440px) {
-    .wrapper-scroll {
+    .wrapper-scroll-basic {
         padding-left: 180px;
         padding-right: 180px;
     }
 }
 
 @media (min-width: 1920px) {
-    .wrapper-scroll {
+    .wrapper-scroll-basic {
         width: 1920px;
         margin-right: auto;
         margin-left: auto;

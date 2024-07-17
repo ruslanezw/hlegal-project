@@ -6,19 +6,6 @@
     background-color: rgba(245, 245, 250, 1);
 }
 
-.recommended-click {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: 1px;
-    color: variables.$blue;
-    text-decoration: none;
-    margin-bottom: 5px;
-}
-
 .recommended-title-des {
     font-size: 30px;
     font-weight: 700;
@@ -27,24 +14,25 @@
     background: variables.$gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 30px;
+    margin-top: 5px;
 }
 
 .recommended-card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+    padding-top: 30px;
 
     .recommended-card-item {
         background-color: variables.$white;
         border-radius: 12px;
+        overflow: hidden;
     }
 
     .recommended-img {
         width: 100%;
         height: 200px;
         object-fit: cover;
-        border-radius: 12px 12px 0 0;
     }
 
     .recommended-card-info {
@@ -53,12 +41,21 @@
         gap: 15px;
         padding: 30px;
 
-        .recommended-card-titel {
+        .recommended-card-link {
             font-size: 16px;
             font-weight: 700;
             line-height: 16px;
             text-align: left;
             color: variables.$blue;
+            text-decoration: none;
+
+            &:hover {
+                color: rgba(240, 20, 90, 1);
+            }
+        
+            &:hover svg path {
+                stroke: rgba(240, 20, 90, 1);
+            }
         }
 
         .recommended-card-date {
@@ -87,12 +84,9 @@
 }
 
 @media (min-width: 768px) {
-    .wrapper {
-       @include mixins.wrapper-pd-60px;
-    }
-
     .recommended-title-des {
         @include mixins.title-size;
+        margin-top: 10px;
     }
 
     .recommended-card {
@@ -111,11 +105,5 @@
 
     .recommended-card-item:nth-child(3) {
         grid-column: 3;
-    }
-}
-
-@media (min-width: 1920px) {
-    .wrapper {
-        @include mixins.wrapper-pd-160px;
     }
 }

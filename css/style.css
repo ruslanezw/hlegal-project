@@ -84,11 +84,6 @@ body {
   right: 40px;
 }
 
-.wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .services-click {
   display: flex;
   justify-content: left;
@@ -100,17 +95,34 @@ body {
   letter-spacing: 1px;
   color: rgb(36, 163, 255);
   text-decoration: none;
-  margin-bottom: 10px;
 }
-
 .services-click:hover {
   color: rgb(240, 20, 90);
 }
-
 .services-click:hover svg path {
   stroke: rgb(240, 20, 90);
 }
 
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
 .services-title-des {
   font-size: 30px;
   font-weight: 700;
@@ -120,6 +132,7 @@ body {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 10px;
 }
 
 .services-cards-inner {
@@ -140,12 +153,20 @@ body {
   margin-bottom: 30px;
 }
 .services-cards-inner .services-card-title {
+  display: block;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
   text-align: left;
   color: rgb(36, 163, 255);
   margin-bottom: 15px;
+  text-decoration: none;
+}
+.services-cards-inner .services-card-title:hover {
+  color: rgb(240, 20, 90);
+}
+.services-cards-inner .services-card-title:hover svg path {
+  stroke: rgb(240, 20, 90);
 }
 .services-cards-inner .services-card-description {
   font-size: 16px;
@@ -156,10 +177,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
   .services-title-des {
     font-size: 38px;
     line-height: 46px;
@@ -175,15 +192,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 1920px) {
-  .wrapper {
-    width: 1920px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 160px;
-    padding-right: 160px;
-  }
-}
 .team {
   padding-top: 80px;
   padding-bottom: 106px;
@@ -193,30 +201,17 @@ body {
 .team-item {
   background-color: rgb(245, 245, 250);
   border-radius: 12px;
+  overflow: hidden;
 }
 .team-item .team-img {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  border-radius: 12px 12px 0 0;
 }
 .team-item .team-info {
   display: flex;
   flex-direction: column;
   padding: 30px;
-}
-.team-item .team-info .team-click {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 14px;
-  letter-spacing: 1px;
-  text-align: left;
-  color: rgb(36, 163, 255);
-  margin-bottom: 5px;
-  text-decoration: none;
 }
 .team-item .team-info .team-title-des {
   font-size: 30px;
@@ -226,7 +221,7 @@ body {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 30px;
+  margin-top: 5px;
 }
 .team-item .team-info .team-name {
   font-size: 16px;
@@ -234,7 +229,7 @@ body {
   line-height: 16px;
   text-align: left;
   color: rgb(179, 179, 186);
-  margin-bottom: 6px;
+  margin-top: 30px;
 }
 .team-item .team-info .team-job-title {
   font-size: 14px;
@@ -242,9 +237,10 @@ body {
   line-height: 14px;
   text-align: left;
   color: rgb(179, 179, 186);
+  margin-top: 6px;
 }
 
-.carousel {
+.snap-button {
   position: absolute;
   right: 0;
   left: 0;
@@ -253,22 +249,18 @@ body {
   justify-content: center;
   gap: 15px;
 }
-.carousel .carousel-btn {
+.snap-button .snap-btn {
   width: 16px;
   height: 16px;
   border-radius: 50%;
   border: transparent;
   background-color: rgba(36, 163, 255, 0.2);
 }
-.carousel .carousel-btn:focus {
+.snap-button .snap-btn:focus {
   background-color: rgb(36, 163, 255);
 }
 
 @media (min-width: 768px) {
-  .wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
   .team-item .team-info .team-title-des {
     font-size: 38px;
     line-height: 46px;
@@ -277,26 +269,21 @@ body {
 @media (min-width: 1024px) {
   .team-item {
     display: flex;
-    flex-direction: row;
   }
   .team-item .team-img {
+    width: 400px;
     height: 528px;
-    border-radius: 12px 0 0 12px;
   }
 }
 @media (min-width: 1440px) {
-  .team-img {
+  .team-item .team-img {
     height: 344px;
-    border-radius: 12px 0 0 12px;
+    flex: none;
   }
 }
 @media (min-width: 1920px) {
-  .wrapper {
-    width: 1920px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 160px;
-    padding-right: 160px;
+  .team-item .team-img {
+    height: 298px;
   }
 }
 .partners-title {
@@ -403,19 +390,6 @@ body {
   background-color: rgb(245, 245, 250);
 }
 
-.recommended-click {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 1px;
-  color: rgb(36, 163, 255);
-  text-decoration: none;
-  margin-bottom: 5px;
-}
-
 .recommended-title-des {
   font-size: 30px;
   font-weight: 700;
@@ -424,23 +398,24 @@ body {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 30px;
+  margin-top: 5px;
 }
 
 .recommended-card {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
+  padding-top: 30px;
 }
 .recommended-card .recommended-card-item {
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
+  overflow: hidden;
 }
 .recommended-card .recommended-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 12px 12px 0 0;
 }
 .recommended-card .recommended-card-info {
   display: flex;
@@ -448,12 +423,19 @@ body {
   gap: 15px;
   padding: 30px;
 }
-.recommended-card .recommended-card-info .recommended-card-titel {
+.recommended-card .recommended-card-info .recommended-card-link {
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
   text-align: left;
   color: rgb(36, 163, 255);
+  text-decoration: none;
+}
+.recommended-card .recommended-card-info .recommended-card-link:hover {
+  color: rgb(240, 20, 90);
+}
+.recommended-card .recommended-card-info .recommended-card-link:hover svg path {
+  stroke: rgb(240, 20, 90);
 }
 .recommended-card .recommended-card-info .recommended-card-date {
   font-size: 12px;
@@ -477,13 +459,10 @@ body {
 }
 
 @media (min-width: 768px) {
-  .wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
   .recommended-title-des {
     font-size: 38px;
     line-height: 46px;
+    margin-top: 10px;
   }
   .recommended-card {
     grid-template-columns: repeat(2, 1fr);
@@ -500,29 +479,16 @@ body {
     grid-column: 3;
   }
 }
-@media (min-width: 1920px) {
-  .wrapper {
-    width: 1920px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 160px;
-    padding-right: 160px;
-  }
-}
-.wrapper-scroll {
+.wrapper-scroll-basic {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 30px;
 }
 
 .navigation-scroll {
   display: flex;
   gap: 30px;
   overflow: auto;
-  margin-right: -30px;
-  margin-left: -30px;
-  padding-left: 30px;
+  padding: 30px 0 30px 30px;
 }
 .navigation-scroll .link-scroll {
   flex-shrink: 0;
@@ -542,6 +508,10 @@ body {
   margin-right: 30px;
 }
 
+.wrapper-scroll {
+  padding: 0 30px 30px 30px;
+}
+
 .line-scroll {
   border: 4px solid rgba(255, 255, 255, 0.3);
   width: 100%;
@@ -551,7 +521,6 @@ body {
 .info-scroll {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 .info-scroll .title-scroll {
   font-size: 20px;
@@ -559,6 +528,7 @@ body {
   line-height: 24px;
   text-align: left;
   color: rgb(255, 255, 255);
+  margin-top: 30px;
 }
 .info-scroll .des-scroll {
   font-size: 19px;
@@ -566,17 +536,15 @@ body {
   line-height: 30px;
   text-align: left;
   color: rgb(255, 255, 255);
+  margin-top: 30px;
 }
 
 @media (min-width: 768px) {
   .wrapper-scroll {
-    gap: 60px;
-    padding: 60px;
+    padding: 0 60px 60px 60px;
   }
   .navigation-scroll {
-    margin-right: -60px;
-    margin-left: -60px;
-    padding-left: 60px;
+    padding: 60px 0 60px 60px;
   }
   .navigation-scroll .link-scroll {
     font-size: 38px;
@@ -588,44 +556,51 @@ body {
   .info-scroll .title-scroll {
     font-size: 30px;
     line-height: 37px;
+    margin-top: 60px;
   }
 }
 @media (min-width: 1024px) {
-  .wrapper-scroll {
+  .wrapper-scroll-basic {
     display: flex;
     flex-direction: row;
+    padding: 60px;
+    gap: 60px;
+  }
+  .wrapper-scroll {
+    display: flex;
+    gap: 60px;
+    padding: 0;
   }
   .navigation-scroll {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    gap: 30px;
     overflow: visible;
-    margin-right: 0px;
     white-space: nowrap;
+    padding: 0;
   }
   .navigation-scroll .link-scroll:last-child {
     margin-right: 0;
   }
   .info-scroll {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: start;
+  }
+  .info-scroll .title-scroll {
+    margin: 0;
   }
   .line-scroll {
     width: 0;
   }
 }
 @media (min-width: 1440px) {
-  .wrapper-scroll {
+  .wrapper-scroll-basic {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
 @media (min-width: 1920px) {
-  .wrapper-scroll {
+  .wrapper-scroll-basic {
     width: 1920px;
     margin-right: auto;
     margin-left: auto;

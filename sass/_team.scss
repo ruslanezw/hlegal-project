@@ -10,12 +10,12 @@
 .team-item {
     background-color: rgba(245, 245, 250, 1);
     border-radius: 12px;
+    overflow: hidden;
 
     .team-img {
         width: 100%;
         height: 500px;
         object-fit: cover;
-        border-radius: 12px 12px 0 0;
     }
 
     .team-info {
@@ -23,29 +23,15 @@
         flex-direction: column;
         padding: 30px;
 
-        .team-click {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 14px;
-            letter-spacing: 1px;
-            text-align: left;
-            color: variables.$blue;
-            margin-bottom: 5px;
-            text-decoration: none;
-        }
-
         .team-title-des {
             font-size: 30px;
             font-weight: 700;
             line-height: 37px;
             text-align: left;
-            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            background: variables.$gradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 30px;
+            margin-top: 5px;
         }
 
         .team-name {
@@ -54,7 +40,7 @@
             line-height: 16px;
             text-align: left;
             color: variables.$grey;
-            margin-bottom: 6px;
+            margin-top: 30px;
         }
 
         .team-job-title {
@@ -63,11 +49,12 @@
             line-height: 14px;
             text-align: left;
             color: variables.$grey;
+            margin-top: 6px;
         }
     }
 }
 
-.carousel {
+.snap-button {
     position: absolute;
     right: 0;
     left: 0;
@@ -76,7 +63,7 @@
     justify-content: center;
     gap: 15px;
 
-    .carousel-btn {
+    .snap-btn {
         width: 16px;
         height: 16px;
         border-radius: 50%;
@@ -84,17 +71,13 @@
         background-color: rgba(36, 163, 255, 0.2);
     }
 
-    .carousel-btn:focus {
+    .snap-btn:focus {
         background-color: variables.$blue;
 
     }
 }
-  
-@media (min-width: 768px) {
-    .wrapper {
-        @include mixins.wrapper-pd-60px;
-    }
 
+@media (min-width: 768px) {
     .team-item .team-info .team-title-des {
         @include mixins.title-size;
     }
@@ -103,24 +86,23 @@
 @media (min-width: 1024px) {
     .team-item {
         display: flex;
-        flex-direction: row;
 
         .team-img {
+            width: 400px;
             height: 528px;
-            border-radius: 12px 0 0 12px;
         }
     }
 }
 
 @media (min-width: 1440px) {
-    .team-img {
+    .team-item .team-img {
         height: 344px;
-        border-radius: 12px 0 0 12px;
+        flex: none;
     }
 }
 
 @media (min-width: 1920px) {
-    .wrapper {
-        @include mixins.wrapper-pd-160px;
-    }
+    .team-item .team-img {
+            height: 298px;
+        }
 }

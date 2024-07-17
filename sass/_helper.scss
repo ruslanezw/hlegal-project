@@ -1,3 +1,6 @@
+@use './mixins';
+@use './variables';
+
 * {
     box-sizing: border-box;
 }
@@ -31,5 +34,43 @@ body {
         bottom: -20px;
         left: 40px;
         right: 40px;
+    }
+}
+
+.services-click {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: variables.$blue;
+    text-decoration: none;
+
+    &:hover {
+        color: rgba(240, 20, 90, 1);
+    }
+
+    &:hover svg path {
+        stroke: rgba(240, 20, 90, 1);
+    }
+}
+
+.wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        @include mixins.wrapper-pd-60px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        @include mixins.wrapper-pd-160px;
     }
 }

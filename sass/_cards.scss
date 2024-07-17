@@ -1,33 +1,6 @@
 @use './mixins';
 @use './variables';
 
-.wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.services-click {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 2px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: 1px;
-    color: variables.$blue;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.services-click:hover {
-    color: rgba(240, 20, 90, 1);
-}
-
-.services-click:hover svg path {
-    stroke: rgba(240, 20, 90, 1);
-}
-
 .services-title-des {
     font-size: 30px;
     font-weight: 700;
@@ -37,6 +10,7 @@
     background: variables.$gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 10px;
 }
 
 .services-cards-inner {
@@ -58,12 +32,22 @@
     }
 
     .services-card-title {
+        display: block;
         font-size: 22px;
         font-weight: 700;
         line-height: 22px;
         text-align: left;
         color: variables.$blue;
         margin-bottom: 15px;
+        text-decoration: none;
+
+        &:hover {
+            color: rgba(240, 20, 90, 1);
+        }
+
+        &:hover svg path {
+            stroke: rgba(240, 20, 90, 1);
+        }
     }
 
     .services-card-description {
@@ -76,10 +60,6 @@
 }
 
 @media (min-width: 768px) {
-    .wrapper {
-        @include mixins.wrapper-pd-60px;
-    }
-
     .services-title-des {
         @include mixins.title-size;
     }
@@ -94,11 +74,5 @@
 @media (min-width: 1024px) {
     .services-cards-inner {
         grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1920px) {
-    .wrapper {
-        @include mixins.wrapper-pd-160px;
     }
 }
