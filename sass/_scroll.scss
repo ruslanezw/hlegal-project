@@ -1,16 +1,18 @@
 @use './mixins';
 @use './variables';
 
-.wrapper-scroll-basic {
+.scroll-basic {
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
 }
 
 .navigation-scroll {
     display: flex;
     gap: 30px;
     overflow: auto;
-    padding: 30px 0 30px 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
 
     .link-scroll {
         flex-shrink: 0;
@@ -34,7 +36,8 @@
 }
 
 .wrapper-scroll {
-    padding: 0 30px 30px 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .line-scroll {
@@ -67,12 +70,18 @@
 }
 
 @media (min-width: 768px) {
+    .scroll-basic {
+        padding-top: 60px;
+    }
+
     .wrapper-scroll {
-        padding: 0 60px 60px 60px;
+        padding-right: 60px;
+        padding-left: 60px;
     }
 
     .navigation-scroll {
-        padding: 60px 0 60px 60px;
+        padding-bottom: 60px;
+        padding-left: 60px;
 
         .link-scroll {
             @include mixins.title-size;
@@ -91,7 +100,7 @@
 }
 
 @media (min-width: 1024px) {
-    .wrapper-scroll-basic {
+    .scroll-basic {
         display: flex;
         flex-direction: row;
         padding: 60px;
@@ -132,14 +141,14 @@
 }
 
 @media (min-width: 1440px) {
-    .wrapper-scroll-basic {
+    .scroll-basic {
         padding-left: 180px;
         padding-right: 180px;
     }
 }
 
 @media (min-width: 1920px) {
-    .wrapper-scroll-basic {
+    .scroll-basic {
         width: 1920px;
         margin-right: auto;
         margin-left: auto;

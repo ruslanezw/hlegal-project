@@ -60,24 +60,24 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-.scroll-services {
+.bg-gradient {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0 0 12px 12px;
   position: relative;
 }
-.scroll-services:before, .scroll-services:after {
+.bg-gradient:before, .bg-gradient:after {
   content: "";
   height: 10px;
   position: absolute;
   border-radius: 0 0 12px 12px;
 }
-.scroll-services:before {
+.bg-gradient:before {
   background-color: rgb(202, 202, 219);
   bottom: -10px;
   left: 20px;
   right: 20px;
 }
-.scroll-services:after {
+.bg-gradient:after {
   background-color: rgb(231, 231, 242);
   bottom: -20px;
   left: 40px;
@@ -123,6 +123,11 @@ body {
     padding-right: 160px;
   }
 }
+.services {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
 .services-title-des {
   font-size: 30px;
   font-weight: 700;
@@ -140,7 +145,6 @@ body {
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
   padding-top: 30px;
-  padding-bottom: 60px;
 }
 .services-cards-inner .services-card-color {
   display: flex;
@@ -177,6 +181,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .services {
+    padding-top: 60px;
+  }
   .services-title-des {
     font-size: 38px;
     line-height: 46px;
@@ -479,16 +486,18 @@ body {
     grid-column: 3;
   }
 }
-.wrapper-scroll-basic {
+.scroll-basic {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 
 .navigation-scroll {
   display: flex;
   gap: 30px;
   overflow: auto;
-  padding: 30px 0 30px 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
 }
 .navigation-scroll .link-scroll {
   flex-shrink: 0;
@@ -509,7 +518,8 @@ body {
 }
 
 .wrapper-scroll {
-  padding: 0 30px 30px 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .line-scroll {
@@ -540,11 +550,16 @@ body {
 }
 
 @media (min-width: 768px) {
+  .scroll-basic {
+    padding-top: 60px;
+  }
   .wrapper-scroll {
-    padding: 0 60px 60px 60px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
   .navigation-scroll {
-    padding: 60px 0 60px 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
   }
   .navigation-scroll .link-scroll {
     font-size: 38px;
@@ -560,7 +575,7 @@ body {
   }
 }
 @media (min-width: 1024px) {
-  .wrapper-scroll-basic {
+  .scroll-basic {
     display: flex;
     flex-direction: row;
     padding: 60px;
@@ -594,13 +609,13 @@ body {
   }
 }
 @media (min-width: 1440px) {
-  .wrapper-scroll-basic {
+  .scroll-basic {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
 @media (min-width: 1920px) {
-  .wrapper-scroll-basic {
+  .scroll-basic {
     width: 1920px;
     margin-right: auto;
     margin-left: auto;
