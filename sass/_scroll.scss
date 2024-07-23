@@ -22,6 +22,7 @@
         text-align: left;
         color: variables.$grey;
         text-decoration: none;
+        transition: 0.3s linear;
 
         &:hover {
             background: variables.$gradient;
@@ -105,6 +106,9 @@
         flex-direction: row;
         padding: 60px;
         gap: 60px;
+        max-width: 1920px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .wrapper-scroll {
@@ -149,9 +153,6 @@
 
 @media (min-width: 1920px) {
     .scroll-basic {
-        width: 1920px;
-        margin-right: auto;
-        margin-left: auto;
         padding-left: 280px;
         padding-right: 280px;
     }

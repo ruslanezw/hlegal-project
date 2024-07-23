@@ -12,7 +12,7 @@
     border-radius: 12px;
     overflow: hidden;
 
-    .team-img {
+    img {
         width: 100%;
         height: 500px;
         object-fit: cover;
@@ -69,6 +69,7 @@
         border-radius: 50%;
         border: transparent;
         background-color: rgba(36, 163, 255, 0.2);
+        transition: 0.3s linear;
     }
 
     .snap-btn:focus {
@@ -87,7 +88,7 @@
     .team-item {
         display: flex;
 
-        .team-img {
+        img {
             width: 400px;
             height: 528px;
         }
@@ -95,14 +96,13 @@
 }
 
 @media (min-width: 1440px) {
-    .team-item .team-img {
+    .team-item img {
         height: 344px;
-        flex: none;
     }
 }
 
 @media (min-width: 1920px) {
-    .team-item .team-img {
-            height: 298px;
-        }
+    .team-item img {
+        height: 298px;
+    }
 }

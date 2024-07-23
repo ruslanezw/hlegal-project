@@ -14,6 +14,85 @@
 
 <body>
     <div class="bg-gradient">
+        <section class="hero">
+            <div class="wrapper">
+                <div class="hero-content">
+                    <div class="header-mobile">
+                        <div class="header-mobile-top">
+                            <div class="lang-mobile">
+                                <a class="lang-btn-hero" href="/">УК</a>
+                                <a class="lang-btn-hero" href="/">РУ</a>
+                                <a class="lang-btn-hero" href="/">EN</a>
+                            </div>
+                            <a class="tel-hero" href="tel:0800211927">0800 211 927</a>
+                        </div>
+                        <div class="header-mobile-bottom">
+                            <span class="header-logo">
+                                <img src="./image/svg/Logo.svg" alt="hlegal-logo">
+                            </span>
+                            <button class="menu-btn-header" id="open-mobile">
+                                <svg width="32" height="32" viewBox="0 0 32 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10.5H25" stroke="white" stroke-width="2" />
+                                    <path d="M7 16.5H25" stroke="white" stroke-width="2" />
+                                    <path d="M7 22.5H25" stroke="white" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <header class="header">
+                        <span class="header-logo">
+                            <img src="./image/svg/Logo.svg" alt="hlegal-logo">
+                        </span>
+                        <div class="bar-hero">
+                            <div class="bar-hero-top">
+                                <div class="lang-hero">
+                                    <a class="lang-btn-hero" href="/">УК</a>
+                                    <a class="lang-btn-hero" href="/">РУ</a>
+                                    <a class="lang-btn-hero" href="/">EN</a>
+                                </div>
+                                <div class="dot"></div>
+                                <a class="maps-hero" href="/">Kyiv, Mechnikova str, 14/1</a>
+                                <div class="dot"></div>
+                                <a class="tel-hero" href="tel:0800211927">0800 211 927</a>
+                                <div class="dot"></div>
+                                <a class="fb-hero" href="/">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_149931_2712)">
+                                            <path
+                                                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_149931_2712">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                            <nav class="nav-hero">
+                                <a class="nav-link-hero" href="/">about us</a>
+                                <a class="nav-link-hero" href="/">services</a>
+                                <a class="nav-link-hero" href="/">team</a>
+                                <a class="nav-link-hero" href="/">publications</a>
+                                <a class="nav-link-hero" href="/">contact</a>
+                            </nav>
+                        </div>
+                    </header>
+                    <h1 class="center-title">
+                        you legal solutions provider
+                    </h1>
+                    <a class="hero-btn " href="/">
+                        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L10 10L19 1" stroke="white" stroke-width="2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
         <section class="scroll-basic">
             <div class="navigation-scroll">
                 <a class="link-scroll" href="/">Consistent</a>
@@ -136,7 +215,24 @@
     <section class="team">
         <div class="wrapper">
             <div class="team-item">
-                <img class="team-img" src="./image/png/tip.png" alt="tip">
+                <picture>
+                    <source srcset="./image/avif/tip-desktop-hd.avif" type="image/avif" media="(min-width:1920px)">
+                    <source srcset="./image/jpg/tip-desktop-hd.jpg" type="image/jpg" media="(min-width:1920px)">
+
+                    <source srcset="./image/avif/tip-desktop-sd.avif" type="image/avif" media="(min-width:1440px)">
+                    <source srcset="./image/jpg/tip-desktop-sd.jpg" type="image/jpg" media="(min-width:1440px)">
+
+                    <source srcset="./image/avif/tip-tablet-hd.avif" type="image/avif" media="(min-width:1024px)">
+                    <source srcset="./image/jpg/tip-tablet-hd.jpg" type="image/jpg" media="(min-width:1024px)">
+
+                    <source srcset="./image/avif/tip-tablet-sd.avif" type="image/avif" media="(min-width:768px)">
+                    <source srcset="./image/jpg/tip-tablet-sd.jpg" type="image/jpg" media="(min-width:768px)">
+
+                    <source srcset="./image/avif/tip-mobile.avif" type="image/avif">
+                    <source srcset="./image/jpg/tip-mobile.jpg" type="image/jpg">
+
+                    <img srcset="./image/jpg/tip-mobile.jpg">
+                </picture>
                 <div class="team-info">
                     <a class="services-click" href="/">
                         команда
@@ -219,7 +315,12 @@
             </h2>
             <div class="recommended-card">
                 <div class="recommended-card-item">
-                    <img class="recommended-img" src="./image/png/Cover1.png" alt="Cover1">
+                    <picture>
+                        <source srcset="./image/avif/Cover1.avif" type="image/avif">
+                        <source srcset="./image/jpg/Cover1.jpg" type="image/jpg">
+
+                        <img srcset="./image/jpg/Cover1.jpg">
+                    </picture>
                     <div class="recommended-card-info">
                         <a class="recommended-card-link" href="/">Equity associate</a>
                         <time class="recommended-card-date">April 22</time>
@@ -231,7 +332,12 @@
                     </div>
                 </div>
                 <div class="recommended-card-item">
-                    <img class="recommended-img" src="./image/png/Cover2.png" alt="Cover2">
+                    <picture>
+                        <source srcset="./image/avif/Cover2.avif" type="image/avif">
+                        <source srcset="./image/jpg/Cover2.jpg" type="image/jpg">
+
+                        <img srcset="./image/jpg/Cover2.jpg">
+                    </picture>
                     <div class="recommended-card-info">
                         <a class="recommended-card-link" href="/">Penalty for the Good Corporation: what will happen to
                             Google and others for violating the
@@ -245,7 +351,12 @@
                     </div>
                 </div>
                 <div class="recommended-card-item">
-                    <img class="recommended-img" src="./image/png/Cover3.png" alt="Cover3">
+                    <picture>
+                        <source srcset="./image/avif/Cover3.avif" type="image/avif">
+                        <source srcset="./image/jpg/Cover3.jpg" type="image/jpg">
+
+                        <img srcset="./image/jpg/Cover3.jpg">
+                    </picture>
                     <div class="recommended-card-info">
                         <a class="recommended-card-link" href="/">Millennial Testament</a>
                         <time class="recommended-card-date">August 19</time>
@@ -258,7 +369,53 @@
                 </div>
             </div>
     </section>
-
+    <footer class="footer">
+        <div class="wrapper">
+            <hr class="footer-line">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <div class="footer-locality">
+                        <p class="footer-address">Kyiv, Mechnikova str., 14/1</p>
+                        <div class="dot"></div>
+                        <a class="footer-maps" href="/">On map</a>
+                    </div>
+                    <div class="footer-contact">
+                        <a class="footer-fb-click" href="/">
+                            <svg width="39" height="38" viewBox="0 0 39 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
+                                    fill="#24A3FF" />
+                            </svg>
+                        </a>
+                        <div class="dot"></div>
+                        <a class="footer-tel" href="tel:0800211927">0800 211 927</a>
+                        <div class="dot"></div>
+                        <a class="footer-mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+                    </div>
+                </div>
+                <p class="footer-company">© 2021 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-menu-bg" id="menu_mobile">
+        <div class="mobile-container">
+            <button class="close-mobile" id="close-mobile">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                    <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                </svg>
+            </button>
+            <div class="mobile-menu-item">
+                <a class="mobile-menu-link" href="/">about us</a>
+                <a class="mobile-menu-link" href="/">services</a>
+                <a class="mobile-menu-link" href="/">team</a>
+                <a class="mobile-menu-link" href="/">publications</a>
+                <a class="mobile-menu-link" href="/">contact</a>
+            </div>
+        </div>
+    </div>
+    <script src="./mobile-menu.js"></script>
 </body>
 
 </html>

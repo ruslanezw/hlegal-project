@@ -44,13 +44,14 @@
         color: variables.$blue;
         margin-bottom: 15px;
         text-decoration: none;
+        transition: 0.3s linear;
 
         &:hover {
-            color: rgba(240, 20, 90, 1);
+            color: variables.$red;
         }
 
         &:hover svg path {
-            stroke: rgba(240, 20, 90, 1);
+            stroke: variables.$red;
         }
     }
 

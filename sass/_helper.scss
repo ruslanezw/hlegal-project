@@ -48,19 +48,24 @@ body {
     letter-spacing: 1px;
     color: variables.$blue;
     text-decoration: none;
+    transition: 0.3s linear;
 
     &:hover {
-        color: rgba(240, 20, 90, 1);
+        color: variables.$red;
     }
 
     &:hover svg path {
-        stroke: rgba(240, 20, 90, 1);
+        transition: 0.3s linear;
+        stroke: variables.$red;
     }
 }
 
 .wrapper {
     padding-left: 30px;
     padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1920px;
 }
 
 @media (min-width: 768px) {

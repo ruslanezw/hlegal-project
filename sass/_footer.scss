@@ -1,0 +1,141 @@
+@use './mixins';
+@use './variables';
+
+.footer {
+    background-color: rgba(245, 245, 250, 1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-line {
+    border: 2px solid rgba(230, 230, 240, 1);
+    width: 100%;
+    margin: 0;
+}
+
+.footer-content {
+    padding-top: 30px;
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    .footer-company {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        color: variables.$grey;
+    }
+}
+
+.footer-locality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .footer-address {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(50, 50, 100, 1);
+    }
+
+    .footer-maps {
+        display: block;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: variables.$blue;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.3s linear;
+
+        &:hover {
+            color: variables.$red;
+        }
+    }
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    gap: 10px;
+    padding-bottom: 30px;
+
+    .footer-fb-click {
+        &:hover svg path {
+            fill: variables.$red;
+        }
+    }
+
+    .footer-tel {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: right;
+        color: rgba(70, 70, 110, 1);
+        text-decoration: none;
+        transition: 0.3s linear;
+
+        &:hover {
+            color: variables.$red;
+        }
+    }
+
+    .footer-mail {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        color: variables.$blue;
+        text-decoration: none;
+        transition: 0.3s linear;
+
+        &:hover {
+            color: variables.$red;
+        }
+    }
+}
+
+.dot {
+    display: none;
+    width: 6px;
+    height: 6px;
+    background-color: variables.$grey;
+    border-radius: 50px;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-locality {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .footer-contact {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .dot {
+        display: flex;
+    }
+}

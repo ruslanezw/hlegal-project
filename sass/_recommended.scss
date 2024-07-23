@@ -29,7 +29,7 @@
         overflow: hidden;
     }
 
-    .recommended-img {
+    img {
         width: 100%;
         height: 200px;
         object-fit: cover;
@@ -48,13 +48,14 @@
             text-align: left;
             color: variables.$blue;
             text-decoration: none;
+            transition: 0.3s linear;
 
             &:hover {
-                color: rgba(240, 20, 90, 1);
+                color: variables.$red;
             }
-        
+
             &:hover svg path {
-                stroke: rgba(240, 20, 90, 1);
+                stroke: variables.$red;
             }
         }
 
