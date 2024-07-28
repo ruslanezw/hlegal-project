@@ -3,9 +3,9 @@
 
 .hero {
     height: 100vh;
-    background-image: url('../image/svg/h.svg');
+    background-image: url('./images/svg/h.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     object-fit: cover;
 
@@ -283,6 +283,10 @@
 }
 
 @media (min-width: 1024px) {
+    .hero {
+        background-size: contain;
+    }
+
     .header {
         flex-direction: row;
         justify-content: space-between;
