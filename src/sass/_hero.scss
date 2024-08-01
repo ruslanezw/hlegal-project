@@ -243,6 +243,69 @@
     }
 }
 
+.header-mobile .publications {
+    color: variables.$grey;
+    background-color: rgba(245, 245, 250, 1);
+    transition: 0.3s linear;
+
+    &:hover {
+        color: variables.$red;
+    }
+}
+
+.header-mobile .publications .lang-btn-hero:hover {
+    background-color: variables.$red;
+    color: variables.$grey;
+}
+
+.header-mobile .publications {
+    color: variables.$grey;
+}
+
+.bar-hero-top .lang-hero .publications {
+    color: variables.$grey;
+    transition: 0.3s linear;
+
+    &:hover {
+        background-color: variables.$red;
+        color: variables.$grey;
+    }
+}
+
+.header.publications .lang-btn-hero:hover {
+    background-color: variables.$red;
+    color: variables.$grey;
+}
+
+.bar-hero .publications {
+    color: variables.$grey;
+    transition: 0.3s linear;
+
+    &:hover {
+        color: variables.$red;
+    }
+}
+
+.bar-hero .publications svg {
+    &:hover svg path {
+        stroke: variables.$red;
+    }
+}
+
+.nav-hero .publications {
+    color: variables.$blue;
+    transition: 0.3s linear;
+
+    &:hover {
+        border-bottom-color: variables.$white;
+    }
+
+    &:focus {
+        color: variables.$red;
+        border-bottom-color: variables.$red;
+    }
+}
+
 @media (min-width: 768px) {
     .header-mobile {
         display: none;
